@@ -1,0 +1,10 @@
+@using Meet.ViewModels;
+@model LoginViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">@Model.UserName @Model.Password</a>.</p>
+</div>

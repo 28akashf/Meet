@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Meet.Models;
+using Meet.ViewModels;
 
 namespace Meet.Controllers;
 
@@ -21,6 +22,15 @@ public class HomeController : Controller
  public IActionResult Login()
     {
         return View();
+    }
+    public IActionResult LoginUser(LoginViewModel model)
+    {
+        
+        return View(model);
+    }
+    public IActionResult RegisterUser(RegisterViewModel model)
+    {
+        return View(model);
     }
     public IActionResult Privacy()
     {
